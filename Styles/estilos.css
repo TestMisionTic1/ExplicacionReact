@@ -10,7 +10,17 @@ ul {
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    background-color: rgb(237, 237, 238);
+    border-bottom: 1px solid grey;
+    box-shadow: 1px 1px gray;
 }
+
+.navbar > li {
+    display: flex;
+    align-items: center;
+
+}
+
 
 .logo{
     height: 70px;
@@ -60,6 +70,9 @@ ul {
     border: 1px solid gray;
     padding: 4px;
     border-radius: 8px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
 
 }
 
@@ -70,4 +83,9 @@ ul {
 .buscar > input{
     border: 0px;
     outline: none;
+}
+
+.iconoBusqueda:hover{
+    color: blue;
+
 }
