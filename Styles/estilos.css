@@ -90,6 +90,12 @@ ul {
 
 }
 
+.tituloPrincipal{
+    text-align: center;
+    color: grey;
+    font-weight: bolder;
+}
+
 .breedCardContainer{
     display: flex;
 }
@@ -109,6 +115,13 @@ ul {
     border-radius: 10px;
 }
 
+.breedTitleComment{
+    color: white;
+    margin: 10px;
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+}
 .contenedorImagen{
     width: 240px;
     height: 350px;
@@ -127,3 +140,14 @@ ul {
     border-top-left-radius: 10px;
 }
 
+.heartRed{
+    color: rgb(202, 114, 114);
+}
+
+.commentwhite{
+    color: white;
+}
+
+.espacio{
+    padding: 10px;
+}
