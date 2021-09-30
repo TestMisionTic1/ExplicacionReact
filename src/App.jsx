@@ -1,7 +1,8 @@
-import './styles/styles.css';
-import Pitbull from './media/pexels-gilberto-reyes-800330.jpg'
-import americanBully from './media/pexels-red-light-films-&-photography-4052898.jpg'
-import logo1 from './media/logo.png'
+import 'styles/styles.css';
+import CardRazasPerros from 'componets/CardRazasPerros';
+import Pitbull from 'media/pexels-gilberto-reyes-800330.jpg'
+import americanBully from 'media/pexels-red-light-films-&-photography-4052898.jpg'
+import logo1 from 'media/logo.png'
 
 function App() {
     return (
@@ -45,32 +46,6 @@ function App() {
             </footer>
         </div>
     );
-}
-function CardRazasPerros({nombreRazas, imagen, descripcion, likes, comment, view }) {
-    return (
-        <li className="breedCard">
-            <div className="contenedorImagen">
-                <img src={imagen} alt= {descripcion} />
-            </div>
-            <span className="breedTitle">
-                {nombreRazas}
-            </span>
-            <div className="breedTitleComment">
-                <span className="espacio">
-                    <i className="fas fa-heart heartRed"></i>
-                    {likes}
-                </span>
-                <span className="espacio">
-                    <i className="far fa-comment commentwhite"></i>
-                    {comment}
-                </span>
-                <span className="espacio">
-                    <i className="fas fa-eye commentwhite"></i>
-                    {view}
-                </span>
-            </div>
-        </li>
-    )
 }
 
 export default App;
