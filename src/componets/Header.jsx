@@ -1,11 +1,16 @@
 import logo1 from 'media/logo.png'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <header>
             <ul className="navbar">
                 <li>
-                    <img className="logo" src={logo1} alt="imagen 2" />
+                    <Link to= '/index' >
+                        <div>
+                            <img className="logo" src={logo1} alt="imagen 2" />
+                        </div>
+                    </Link>
                 </li>
                 <li>
                     <button className="button mainButton"><i className="fas fa-plus"></i> Nuevo post</button>
