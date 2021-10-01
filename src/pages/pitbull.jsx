@@ -1,7 +1,9 @@
 
 
-function PitbullinfoPage(){
-    return <div> esta es la info del pitbull </div>
+function PitbullinfoPage() {
+    return (
+           <div>Informacion Sobre el Pitbull</div>
+    );
 }
 
 export default PitbullinfoPage;

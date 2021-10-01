@@ -4,27 +4,30 @@ import AmericanBullyPage from 'pages/americanbully';
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
-    Link
-  } from "react-router-dom";
+    Route
+
+} from "react-router-dom";
 import Index from 'pages';
+import Layout from 'layouts/Layout';
 
 
 function App() {
     return (
         <div className="App">
             <Router>
-                <Switch>
-                    <Route path="/pitbull">
-                        <PitbullinfoPage />
-                    </Route>
-                    <Route path= "/americanbully">
-                        <AmericanBullyPage />
-                    </Route>
-                    <Route path="/">
-                        <Index />
-                    </Route>
-                </Switch>
+                <Layout>
+                    <Switch>
+                        <Route path="/pitbull">
+                            <PitbullinfoPage />
+                        </Route>
+                        <Route path="/americanbully">
+                            <AmericanBullyPage />
+                        </Route>
+                        <Route path="/">
+                            <Index />
+                        </Route>
+                    </Switch>
+                </Layout>
             </Router>
         </div>
     );
